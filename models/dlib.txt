@@ -1,2 +1,0 @@
-
-Dlib is a powerful C++ library with Python interface that provides various machine learning and computer vision algorithms.
