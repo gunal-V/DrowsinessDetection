@@ -1,4 +1,4 @@
-# Driver Drowsiness Detection System
+# Drowsiness Detection System
 
 ## Overview
 The Driver Drowsiness Detection System is a project aimed at enhancing road safety by identifying signs of drowsiness in drivers. The system uses a pre-trained model from the dlib library along with OpenCV to monitor and assess a driver's eye state, raising an alert if drowsiness is detected. By analyzing eye movements and other facial cues, this system can effectively determine when a driver may be losing alertness, reducing the risk of accidents caused by fatigue.
