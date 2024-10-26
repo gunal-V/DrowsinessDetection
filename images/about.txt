@@ -1,0 +1,14 @@
+The 68 facial landmarks model is a widely used dataset in facial recognition and detection applications, particularly with the dlib library. It identifies 68 specific points on a face that correspond to key facial features, such as the eyebrows, eyes, nose, mouth, and jawline. These landmarks make it possible to accurately analyze facial expressions and movements, which are crucial for detecting drowsiness in drivers.
+
+Key Landmarks for Eyes
+- Eye landmarks (points 36–41 for the left eye, 42–47 for the right eye) help in detecting blinks and eye closure. By monitoring these points, the system can analyze the eye’s openness.
+Eye Aspect Ratio (EAR)
+- The Eye Aspect Ratio (EAR) is a key metric used to measure whether the eyes are open or closed. It’s calculated based on the vertical and horizontal distances between specific eye landmarks:
+
+EAR = (|p2 - p6| + |p3 - p5|) / 2*|p1 - p4|
+
+Where:
+- p1, p2, p3, p4, p5, and p6 are the coordinates of eye landmarks.
+- A lower EAR value (below a certain threshold) indicates the eyes are likely closed.
+
+By continuously measuring the EAR, the system can detect prolonged eye closure, which is a sign of drowsiness, and trigger an alert if needed.
